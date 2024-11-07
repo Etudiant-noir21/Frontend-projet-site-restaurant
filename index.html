@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site restaurant</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- cdn fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <header id="header">
+        <!-- navigation -->
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="#">
+                    <img src="pictures/logo.png" alt="logo de notre restaurant">
+                </a></li>
+                <input type="checkbox"  id="check">
+                <span class="menu">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">temoignages</a></li>
+                    <li><a href="#">Offres speciales</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">contact</a></li>
+                    <label for="check" class="close-menu"><i class='fas fa-times'></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+        <div class="header-desc">
+            <h1>Teraga Gastro</h1>
+            <p>Bienvenue chez nous,là où chaque bouchée est une invitation au voyage!</p>
+            <a href="menu.html"><button class="button">commandez des maintenant</button></a>
+        </div>
+    </header>
 </body>
 </html>
