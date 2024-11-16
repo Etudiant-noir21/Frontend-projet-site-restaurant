@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau des Employés de JokkoHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #5b8ef5;
+        }
+        h1{
+            text-align: center ;
+            color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 12px 16px rgb(249, 249, 249);
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 2px solid #323131;
+        }
+        th {
+            background-color: #0000f4;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #a1d1fa;
+        }
+        tr:hover {
+            background-color: #ece502;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Liste des Employés de JokkoHub</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Département</th>
+                <th>Poste</th>
+                <th>Salaire (FCFA)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Fatou</td>
+                <td>Kane</td>
+                <td>Ressources Humaines</td>
+                <td>Responsable RH</td>
+                <td>850,000</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Modou</td>
+                <td>Faye</td>
+                <td>Informatique</td>
+                <td>Développeur Web</td>
+                <td>700,000</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Aissatou</td>
+                <td>Mbengue</td>
+                <td>Marketing</td>
+                <td>Responsable Marketing</td>
+                <td>600,000</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Ousmane</td>
+                <td>Tall</td>
+                <td>Logistique</td>
+                <td>Chef de Logistique</td>
+                <td>750,000</td>
+            </tr>
+            <tr>
+                <td>005</td>
+                <td>Khady</td>
+                <td>Gueye</td>
+                <td>Comptabilité</td>
+                <td>Comptable</td>
+                <td>550,000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
