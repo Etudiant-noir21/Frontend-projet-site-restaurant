@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site restaurant</title>
+    <!-- cnd bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- link css -->
     <link rel="stylesheet" href="styles.css">
     <!-- cdn fontawesome -->
@@ -21,8 +24,8 @@
                 </a></li>
                 <input type="checkbox"  id="check">
                 <span class="menu">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Menu</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html">Menu</a></li>
                     <li><a href="#">Galerie</a></li>
                     <li><a href="#">temoignages</a></li>
                     <li><a href="#">Offres speciales</a></li>
@@ -36,8 +39,108 @@
         <div class="header-desc">
             <h1>Teraga Gastro</h1>
             <p>Bienvenue chez nous,là où chaque bouchée est une invitation au voyage!</p>
-            <a href="menu.html"><button class="button">commandez des maintenant</button></a>
+            <div class="call-to-action d-flex gap-5 p-2">
+                <a href="menu.html"><button class="button">commander des maintenant</button></a>
+                <a href="reservation.html"><button class="button">Reserver une Table</button></a>
+            </div>
+           
         </div>
     </header>
+    <main>
+        <!-- section a propos -->
+        <section id="a_propos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 ">
+                        <div class="title text-center">
+                            <h2 class="display-4 fw-bold text-uppercase">
+                            A Propos de nous
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2">
+                        <div class="text-center">
+                            <p>
+                                "Bienvenue chez Teranga Gastro, où l’art culinaire et l’innovation se rencontrent pour
+                                 une expérience gastronomique unique. Nous sélectionnons avec soin chaque ingrédient 
+                                 pour créer des plats qui marient saveurs authentiques et créativité. Venez découvrir 
+                                 un voyage gustatif qui éveille les sens !"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- plat du jours -->
+         <section id="plat-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-2">
+                        <div class="title texte-center mt-3 mb-4">
+                            <h2 class="display-4 fw-bold text-center">
+                                Decouvrer notre menu du jours
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 p-2">
+                        <div class="content-plat px-2">
+                            <div class="img-part">
+                                <img src="pictures/poulet-braise.jpg" alt="" class="img-fluid rounded-5">
+                            </div>
+                            <div class="desc-img text-center">
+                                <h4 class="text-center mt-1">Poulet Braisé</h4>
+                                <p>
+                                    Savourez notre poulet braisé, mariné dans des épices
+                                     fines et cuit lentement pour une tendreté exceptionnelle.
+                                     Sa peau dorée et croustillante renferme une chair juteuse,
+                                     rehaussée d'une légère touche fumée qui exalte toutes les
+                                     saveurs. Un véritable délice pour les amateurs de viandes
+                                      savoureuses
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 p-2">
+                        <div class="content-plat px-2">
+                            <div class="img-part">
+                                <img src="pictures/Tartelettes.jpg" alt="" class="img-fluid rounded-5">
+                            </div>
+                            <div class="desc-img text-center">
+                                <h4 class="text-center mt-1">Tartelette au Citron et au Miel</h4>
+                                <p>
+                                    Terminez sur une note de fraîcheur avec notre tartelette au citron et au miel. 
+                                    Sa pâte croquante garnie d'une crème citronnée onctueuse et subtilement sucrée
+                                     au miel est le parfait équilibre entre douceur et vivacité. Une touche sucrée
+                                      raffinée pour clore en beauté votre repas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 p-2">
+                        <div class="content-plat px-2">
+                            <div class="img-part">
+                                <img src="pictures/jus-mangue.jpeg" alt="" class="img-fluid rounded-5">
+                            </div>
+                            <div class="desc-img text-center">
+                                <h4 class="text-center mt-1">Jus de Mangue et Fruit de la Passion</h4>
+                                <p>
+                                    Découvrez notre jus exotique de mangue et fruit de la passion, un mariage
+                                     parfait entre douceur et acidité. Cette boisson rafraîchissante, naturellement
+                                      sucrée, apporte une touche tropicale et vitaminée, idéale pour accompagner votre repas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2">
+                        <div class="link-voirplus d-flex justify-content-center">
+                            <a href="#" class="btn">Voir Plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </main>
 </body>
 </html>
