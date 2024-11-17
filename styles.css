@@ -28,9 +28,10 @@ a{
     align-items: center;
     list-style: none;
     position: relative;
-    padding: 12px 20px;
+    /* padding: 12px 20px; */
 
 }
+
 
 .menu{
     display: flex;
@@ -122,14 +123,13 @@ nav{
 .header-desc button{
     background-color: #fff;
     color: #000;
-    padding: 20px;
+    padding: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 18px;
     transition: 3s;
-    /* height: 50px; */
 }
 .header-desc button:hover{
 box-shadow: 2px 2px 10px #000;
@@ -223,6 +223,9 @@ box-shadow: 2px 2px 10px #000;
     p{
         font-size: 16px;
     }
+    .header-desc button{
+        margin-top: 10px;
+    }
 }
 
 /* section */
@@ -242,8 +245,55 @@ section{
     color: #fff;
     font-weight: 500;
 border-radius: 20px;
+transition:all 3s ease-in-out;
 }
 #plat-menu .link-voirplus a:hover{
     background-color: #fff;
     color: #333333;
+}
+.content-plat{
+    transition: 3s ease;
+    cursor: pointer;
+}
+.content-plat:hover{
+    transform: scale(1.1);
+}
+
+/* offre speciaciale */
+.offre-content{
+    background-color: #333333;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.15);
+    transition: 3s ease;
+    cursor: pointer;
+}
+.offre-content:hover{
+    transform: scale(0.95);
+}
+.offre-content h5{
+    text-align: center;
+}
+/* footer */
+footer{
+    background-color: #333333;
+    color: #fff;
+}
+footer ul div li{
+    line-height: 40px;
+    font-weight: 500;
+}
+footer button{
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+footer label {
+    font-size: 28px;
+    font-weight: 600;
+}
+footer .social-side a{
+    font-size: 48px;
 }
