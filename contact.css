@@ -33,7 +33,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 100px;
     height: 80vh;
 }
 .main-text{
