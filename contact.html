@@ -45,7 +45,7 @@
    <main class="main">
     <h3 class="main-title">Contactez-nous à tout instant !</h3>
  <div class=" container text-center row">
- <p class="main-text col">
+ <p class="main-text col" id="">
   Adresse du restaurant:<br>
 
   sacre Coeur 3<br>
@@ -62,23 +62,23 @@
         <div class="main-form col">
     <form class="row g-3">
             <div class="col-md-6">
-              <label for="lastname" class="form-label">Nom</label>
-              <input type="text" class="form-control" id="lastname" required required>
+              <label class="form-label">Nom</label>
+              <input type="text" class="form-control" id="input-box" required>
             </div>
             <div class="col-md-6">
-              <label for="firstname" class="form-label">Prenom </label>
-              <input type="text" class="form-control" id="firstname" required>
+              <label  class="form-label">Prenom </label>
+              <input type="text" class="form-control" id="input-box" required>
             </div>
             <div class="col-md-12">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required>
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" id="input-box" required>
             </div>
             <div class="mb-3">
-                <label for="message" class="form-label">Commentaires</label>
-                <textarea name="message" id="message" class="form-control py-4"></textarea>
+                <label class="form-label">Commentaires</label>
+                <textarea name="message" class="form-control py-4" id="input-box"></textarea>
               </div>
             <div class="col-md-12">
-              <button type="submit" class="btn btn-light btn-lg">Envoyer</button>
+              <button type="submit" class="btn btn-light btn-lg" id="input-box">Envoyer</button>
             </div>
           </form>
         </div>
@@ -102,9 +102,10 @@
         </nav>
     </div>
     <div class="footer-block">
-      <nav>
-            <ul class="navbar-nav">
-              <li class="nav-item">
+      <nav class="footer-nav p-3">
+              <div>
+                <ul>
+                <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">ACCUEIL</a>
               </li>
               <li class="nav-item">
@@ -113,6 +114,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="galerie.html">GALERIE</a>
               </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
               <li class="nav-item">
                 <a class="nav-link" href="temoignages.html">TEMOIGNAGES</a>
               </li>
@@ -123,6 +128,8 @@
                 <a class="nav-link" href="contact.html">CONTACT</a>
               </li>
             </ul>
+            </div>
+            
       </nav>
     </div>
     <div class="footer-block">
