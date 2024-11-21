@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site restaurant</title>
+    <!-- cnd bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- link css -->
     <link rel="stylesheet" href="styles.css">
     <!-- cdn fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
      crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- lien icon bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <!-- cnd aos animation -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header id="header">
@@ -21,13 +28,17 @@
                 </a></li>
                 <input type="checkbox"  id="check">
                 <span class="menu">
+<<<<<<< HEAD
                     <li><a href="#">Accueil</a></li>
+=======
+                    <li><a href="index.html">Accueil</a></li>
+>>>>>>> ae360f4191826e4f324da6b627c260fdeb5c0a39
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="#">Galerie</a></li>
                     <li><a href="#">temoignages</a></li>
                     <li><a href="#">Offres speciales</a></li>
-                    <li><a href="#">Reservation</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="contact.html">contact</a></li>
                     <label for="check" class="close-menu"><i class='fas fa-times'></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -36,8 +47,280 @@
         <div class="header-desc">
             <h1>Teraga Gastro</h1>
             <p>Bienvenue chez nous,là où chaque bouchée est une invitation au voyage!</p>
-            <a href="menu.html"><button class="button">commandez des maintenant</button></a>
+            <div class="call-to-action p-2">
+                <a href="menu.html"><button class="button">commander des maintenant</button></a>
+                <a href="reservation.html"><button class="button">Reserver une Table</button></a>
+            </div>
+           
         </div>
     </header>
+    <main>
+        <!-- section a propos -->
+        <section id="a_propos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 " data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease">
+                        <div class="title text-center">
+                            <h2 class="display-4 fw-bold text-uppercase">
+                            A Propos de nous
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2">
+                        <div class=" fs-md-6 fs-lg-5"  data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease">
+                            <p>
+                                "Bienvenue chez Teranga Gastro, où l’art culinaire et l’innovation se rencontrent pour
+                                 une expérience gastronomique unique. Nous sélectionnons avec soin chaque ingrédient 
+                                 pour créer des plats qui marient saveurs authentiques et créativité. Venez découvrir 
+                                 un voyage gustatif qui éveille les sens !"
+                            </p>
+                            <p>
+                                Teranga Gastro est né d’une passion profonde pour la cuisine et d’un désir d’offrir une expérience culinaire 
+                                authentique et mémorable. Tout a commencé par un rêve : celui de créer un lieu où
+                                 chaque plat raconte une histoire, où chaque ingrédient trouve sa juste place pour sublimer les saveurs.
+                            </p>
+                            <p>
+                                Inspirés par les traditions culinaires de nos racines et enrichis par les techniques modernes,
+                                 nous avons voulu fonder un restaurant qui marie respect de l'authenticité et innovation.
+                                  Teranga Gastro n’est pas simplement un restaurant ; c’est une invitation au voyage, 
+                                  un hommage aux saveurs de nos terres et une exploration de nouvelles harmonies.
+                            </p>
+                            <p>
+                                Depuis notre ouverture, nous nous engageons à sélectionner les meilleurs produits, en privilégiant
+                                 des ingrédients locaux et de saison. Nos chefs passionnés mettent tout leur savoir-faire dans 
+                                 chaque plat, cherchant à offrir à nos clients une expérience sensorielle unique, de l’entrée au dessert.
+                            </p>
+                            <p>
+                                Teranga, un mot signifiant hospitalité, est au cœur de notre philosophie : offrir à nos invités non seulement 
+                                de bons repas, mais aussi des moments inoubliables. Alors, asseyez-vous, laissez-vous emporter par notre menu,
+                                 et découvrez les trésors culinaires que nous avons préparés pour vous.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- plat du jours -->
+         <section id="plat-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-2">
+                        <div class="title texte-center mt-3 mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                            <h2 class="display-4 fw-bold text-center">
+                                Decouvrer notre menu du jours
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-4 p-2">
+                        <div class="content-plat p-2 shadow rounded" data-aos="fade-up" data-aos-delay="1000" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                            <div class="img-part">
+                                <img src="pictures/poulet-braise.jpg" alt="" class="img-fluid rounded-5">
+                            </div>
+                            <div class="desc-img text-center">
+                                <h4 class="text-center mt-1">Poulet Braisé</h4>
+                                <p>
+                                    Savourez notre poulet braisé, mariné dans des épices
+                                     fines et cuit lentement pour une tendreté exceptionnelle.
+                                     Sa peau dorée et croustillante renferme une chair juteuse,
+                                     rehaussée d'une légère touche fumée qui exalte toutes les
+                                     saveurs. Un véritable délice pour les amateurs de viandes
+                                      savoureuses
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 p-2">
+                        <div class="content-plat p-2 shadow rounded" data-aos="fade-up" data-aos-delay="1500" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                            <div class="img-part">
+                                <img src="pictures/Tartelettes.jpg" alt="" class="img-fluid rounded-5">
+                            </div>
+                            <div class="desc-img text-center">
+                                <h4 class="text-center mt-1">Tartelette au Citron et au Miel</h4>
+                                <p>
+                                    Terminez sur une note de fraîcheur avec notre tartelette au citron et au miel. 
+                                    Sa pâte croquante garnie d'une crème citronnée onctueuse et subtilement sucrée
+                                     au miel est le parfait équilibre entre douceur et vivacité. Une touche sucrée
+                                      raffinée pour clore en beauté votre repas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 p-2">
+                        <div class="content-plat p-2 shadow rounded" data-aos="fade-up" data-aos-delay="2000" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                            <div class="img-part">
+                                <img src="pictures/jus-mangue.jpeg" alt="" class="img-fluid rounded-5">
+                            </div>
+                            <div class="desc-img text-center">
+                                <h4 class="text-center mt-1">Jus de Mangue et Fruit de la Passion</h4>
+                                <p>
+                                    Découvrez notre jus exotique de mangue et fruit de la passion, un mariage
+                                     parfait entre douceur et acidité. Cette boisson rafraîchissante, naturellement
+                                      sucrée, apporte une touche tropicale et vitaminée, idéale pour accompagner votre repas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2">
+                        <div class="link-voirplus d-flex justify-content-center" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                            <a href="#" class="btn">Voir Plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- offre speciales -->
+          <section id="offre_speciale">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-2">
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-duration="1500">
+                            <h2 class="display-4 fw-bold">Offres speciales</h2>
+                            <p>Avec terenga Gastro vous avez tous les privilege du monde</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-4 p-2">
+                        <div class="offre-content px-2" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out" data-aos-duration="2000">
+                            <h5 class="mb-2">Carte de Fidélité Digitale</h5>
+                            <p>
+                                Rejoignez notre Programme de Fidélité Teraga Gastro !
+                                 Pour chaque repas savouré chez nous, accumulez des
+                                  points directement depuis notre application ou sur 
+                                  notre site web. Au bout de 10 repas, profitez d’une 
+                                  réduction exclusive ou d’un plat spécial offert en 
+                                  guise de remerciement ! Avec notre carte de fidélité
+                                   digitale, bénéficiez de récompenses gourmandes tout
+                                    en simplifiant votre expérience.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-4 p-2">
+                        <div class="offre-content px-2" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in-out" data-aos-duration="2500">
+                            <h5 class="mb-2">Menus de Fêtes Spéciaux</h5>
+                            <p>
+                                Célébrez les Fêtes avec Teraga Gastro ! Pour chaque grande occasion
+                                 – que ce soit Noël, la Saint-Valentin ou la Fête des Mères – nous 
+                                 vous proposons un menu spécial, conçu pour rendre ces moments inoubliables. 
+                                 Plats raffinés, desserts exclusifs, et une ambiance chaleureuse : venez fêter 
+                                 avec nous et laissez-nous vous offrir une expérience culinaire exceptionnelle.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-4 p-2">
+                        <div class="offre-content px-2" data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-in-out" data-aos-duration="3000">
+                            <h5 class="mb-2">Offre "Un Dessert Offert" pour les Commandes Groupées</h5>
+                            <p>
+                                Un Moment Gourmand à Partager ! Invitez vos amis, votre famille ou vos
+                                 collègues et profitez d'un dessert offert pour chaque convive ! Pour
+                                  toute réservation de 4 personnes ou plus, savourez ensemble un dessert
+                                   gratuit, comme notre célèbre tartelette au citron et au miel. Une offre
+                                    parfaite pour rendre vos sorties encore plus conviviales et savoureuses !
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <!-- footer -->
+    </main>
+    <footer class="mt-5 p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 p-2">
+                    <div class="left px-2">
+                        <p>
+                            Merci de votre visite chez Teraga Gastro. Nos portes sont ouvertes
+                             pour vous offrir des moments uniques et des saveurs authentiques.
+                              Restez connectés avec nous et découvrez nos actualités en suivant nos réseaux sociaux 
+                        </p>
+                        <div class="social-side d-flex gap-4">
+                            <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer" class="" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                  </svg>
+                            </a>
+                            <a href="http://www/.instagram.com" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                  </svg>
+                            </a>
+                            <a href="http://www.tiktok.com" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                                  </svg>
+                            </a>
+                            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.821813839183!2d-17.47011292554278!3d14.722663974077843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173782be5390b%3A0x75f204652ab8ecc6!2zU2FjcsOpIGPFk3VyIDM!5e0!3m2!1sfr!2ssn!4v1731795685990!5m2!1sfr!2ssn" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 p-2">
+                    <div class="middle px-2">
+                        <ul class=" d-flex gap-5 justify-content-center">
+                            <div>
+                                <li class="">
+                                    <a href="index.html">Acceuil</a>
+                                </li>
+                                <li class="">
+                                    <a href="menu.html">Menu</a>
+                                </li>
+                                <li class="">
+                                    <a href="temoignage.html">Temoignages</a>
+                                </li>
+                            </div>
+                            <div>
+                                <li class="">
+                                    <a href="galerie.html">Galerie</a>
+                                </li>
+                                <li class="">
+                                    <a href="reservation.html">Reservation</a>
+                                </li>
+                                <li class="">
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </div>
+                           
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 p-2">
+                    <div class="right px-2">
+                        <form action="">
+                            <div class="d-flex flex-column justify-content-center align-item-center gap-3">
+                                <label for="newletter" class="form-label">S'inscrir a notre Newletter</label>
+                                <input type="text" name="newletter" id="newletter" class="form-control">
+                                <button type="submit">S'inscrire</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 text-center">
+                <div class="col-md-12">
+                        Copiright 2024 by@Teranga Gastro        tous  droit reserver 
+    
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

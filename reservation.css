@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+body{
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: url(pictures/Reservation.png) no-repeat;
+    background-size: cover;
+    background-position: center ;
+    
+}
+.container-fluid{
+    font-family: Arimo;
+    font-weight: bold;
+    font-size: 18px;
+}
+.logo{
+    padding-left: 20px;
+    padding-right: 200px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.main-title{
+    text-align: center;
+    padding: 50px;
+}
+.second-title{
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 30px;   
+}
+.main-form{
+    text-align: center;
+    width: 100%;
+    padding: 100px;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+.card iframe{
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+.footer .navbar-nav li:hover{
+    color: aqua;
+}
+.footer-block{
+    color: white;
+    font-weight: bold;
+    width: 30%;
+    text-align: center;
+    padding:100px ;
+}
+.footer-social{
+    color: white;
+    font-weight: bold;
+    width: 40%;
+    text-align: center;
+    padding:100px ;
+}
+.footer-social a{
+    padding: 5px;
+    opacity: 1;
+}
+.footer-social a:hover{
+    opacity: 0.5;
+}
