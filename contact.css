@@ -14,7 +14,7 @@ body{
 }
 .logo{
     padding-left: 20px;
-    padding-right: 200px;
+    padding-right: 10cm;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -25,27 +25,15 @@ body{
 .second-title{
     text-align: center;
     padding-bottom: 30px;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px;  
 }
-
-.main-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 100px;
-    height: 80vh;
-}
-.main-text{
+.main{
     text-align: center;
-    width: 30%;
     font-size: 20px;
     font-weight: bold;
-    padding-top: 40px;
 }
-.main-form{
-    text-align: center;
-    width: 70%;
+.main-text{
+    padding-top: 100px;
 }
 .card iframe{
     width: 100%;
@@ -59,30 +47,32 @@ body{
     flex-wrap: wrap;
     margin-top: 100px;
     background-color: black;
-    width: 100%;
     height: auto;
+    text-align: center;
 }
-.footer .navbar-nav li:hover{
-    color: aqua;
-}
+
 .footer-block{
     color: white;
     font-weight: bold;
     width: 30%;
-    text-align: center;
-    padding:100px ;
+    padding-top:50px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .footer-social{
     color: white;
     font-weight: bold;
     width: 40%;
-    text-align: center;
-    padding:100px ;
+    padding-top:50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
-.footer-social a{
-    padding: 5px;
+.footer-social i{
+    color: white;
+    font-size: 40px;
+    padding: 10px;
     opacity: 1;
 }
-.footer-social a:hover{
+.footer-social i:hover{
     opacity: 0.5;
 }
