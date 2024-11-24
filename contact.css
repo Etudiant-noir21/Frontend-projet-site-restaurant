@@ -33,10 +33,11 @@ body{
     margin-bottom: 30px;  
 }
 .main-text{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .main li{
     list-style-type: none;
+    line-height: 40px;
 }
 form{
     background:rgba(255, 253, 253, 0.3);
