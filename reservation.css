@@ -48,6 +48,13 @@ form{
 #input-box:hover{
     background: rgba(255, 253, 253, 0.5);
 }
+.hr{
+    background-color: black;
+    border-radius: 10px;
+    width: 30%;
+    padding: 1px;
+    margin: auto;
+}
 
 .card iframe{
     width: 100%;
