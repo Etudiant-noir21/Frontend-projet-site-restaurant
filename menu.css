@@ -54,6 +54,7 @@ nav {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 30px;
+  padding-top: 40px;
 }
 
 .ccard {
@@ -62,12 +63,13 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  border-right: 1px solid black; 
 }
 
 .card-items {
   display: grid;
   gap: 30px;
-  /* border: 1px solid red; */
+   
 }
 
 @media screen and (max-width: 720px) {
