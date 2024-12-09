@@ -129,10 +129,14 @@ nav{
     cursor: pointer;
     transition: 0.3s;
     font-size: 18px;
-    transition: 3s;
+    transition: all 3s ;
 }
 .header-desc button:hover{
 box-shadow: 2px 2px 10px #000;
+transform: translateY(-10px);
+background-color: #212121;
+/* opacity: 0.75; */
+    color: #fff;
 }
 @media (max-width: 1024px){
     .header-desc h1{
