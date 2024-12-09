@@ -12,12 +12,7 @@ body{
     font-weight: bold;
     font-size: 18px;
 }
-.logo{
-    padding-left: 20px;
-    padding-right: 200px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
+
 .main{
     font-size: 20px;
     font-weight: 500;
@@ -43,11 +38,17 @@ body{
     position: relative;
     right: 5px;
 }
+
+nav li a{
+    color: #212121;
+    text-decoration: none;
+    font-weight: 500;
+}
 .main li{
     list-style-type: none;
     line-height: 30px;
 }
-form{
+main form{
     text-align: left;
     box-shadow: 7px 3px 3px rgba(44, 53, 53, 0.5);
     background:rgba(255, 253, 253, 0.3);
@@ -69,48 +70,8 @@ form{
 #input-box:hover{
     background: rgba(255, 253, 253, 0.5);
 }
-.footer{
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    background-color: black;
-    height: auto;
-    text-align: center;
-}
-
-.footer-block{
-    color: white;
-    font-weight: bold;
-    width: 30%;
-    padding-top:50px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.footer-social{
-    color: white;
-    font-weight: bold;
-    width: 40%;
-    padding-top:50px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.footer-nav{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.footer-nav li{
-list-style-type: none;
-    text-align: center;
-    font-size: 14px;
-    line-height: 40px;
-}
-.footer-social i{
-    color: white;
-    font-size: 40px;
-    padding: 10px;
-    opacity: 1;
-}
-.footer-social i:hover{
-    opacity: 0.5;
+footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: 600;
 }
