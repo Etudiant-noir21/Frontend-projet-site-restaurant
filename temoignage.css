@@ -1,0 +1,26 @@
+ /* font family carattere */
+ @import url('https://fonts.googleapis.com/css2?family=Carattere&family=Outfit:wght@100..900&display=swap');
+
+ /* font family arimo */
+ @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Carattere&family=Outfit:wght@100..900&display=swap');
+ *,::after,::before{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none;
+ }
+ 
+ body{
+     font-family: 'arimo', sans-serif;
+     width: 100%;
+     padding: 0;
+     background-color: #f1f1f1;
+ }
+
+ 
+#testimonials{
+    margin-top: 50px;
+   min-height: 100vh;
+}
+
