@@ -1,33 +1,196 @@
-body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-logo {
+ /* font family carattere */
+ @import url('https://fonts.googleapis.com/css2?family=Carattere&family=Outfit:wght@100..900&display=swap');
+
+ /* font family arimo */
+ @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Carattere&family=Outfit:wght@100..900&display=swap');
+ *,::after,::before{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none;
+ }
+ 
+ body{
+     font-family: 'arimo', sans-serif;
+     width: 100%;
+     padding: 0;
+     background-color: #f1f1f1;
+ }
+  .nav-bar{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    background-color: white;
-    border: 1px solid black;
-    padding-left: 40px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    /* padding: 12px 20px; */
+
+}
+.menu a{
+  text-decoration: none;
+  color: #000;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+
+.menu{
+    display: flex;
+}
+.menu li{
+    padding-left: 30px;
+}
+.menu li a{
+    display: inline-block;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.menu li a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover::after{
+    width: 100%;
+}
+.open-menu, .close-menu{
+    position: absolute;
+    color: #000;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top: 20px;
+    right: 20px;
+}
+#check{
+    display: none;
+}
+
+
+@media (max-width: 1024px){
+  .header-desc h1{
+      font-size: 60px;
   }
-  nav ul li {
-    display: inline;
+  .header-desc p{
+      font-size: 20px;
   }
-  
-  li a {
-    text-decoration: none;
-    padding: 20px;
-  
-    font-weight: bolder;
+  .menu{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: 80%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      background-color: #fff;
+      z-index: 100;
+      transition: all 0.2s ease-in-out;
   }
-  
-  a:hover {
-    text-decoration: underline;
+  .menu li{
+      margin-top: 40px;
   }
-  
-  nav {
-    padding-top: 25px;
+  .menu li a{
+
+      padding: 10px;
   }
+  .open-menu, .close-menu{
+      display: block;
+  }
+  .close-menu{
+      position: absolute;
+  }
+  #check:checked ~ .menu{
+      right: 0;
+  }
+}
+
+@media (max-width: 768px){
+  header{
+      width: 100%;
+      height: 100vh;
+  }
+  .header-desc{
+      width: 100%;
+  }
+  .header-desc h1{
+      font-size: 40px;
+  }
+  .header-desc p{
+      font-size: 18px;
+  }
+  .header-desc button{
+      font-size: 16px;
+      padding: 10px;
+  }
+  .menu{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: 80%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      background-color: #fff;
+      z-index: 100;
+      transition: all 0.2s ease-in-out;
+  }
+  .menu li{
+      margin-top: 40px;
+  }
+  .menu li a{
+      padding: 10px;
+  }
+  .open-menu, .close-menu{
+      display: block;
+  }
+  .close-menu{
+      position: absolute;
+  }
+  #check:checked ~ .menu{
+      right: 0;
+  }
+  p{
+      font-size: 16px;
+  }
+  .header-desc button{
+      margin-top: 10px;
+  }
+}
+ 
   .section1{
     background-image:linear-gradient(400deg,black,transparent 150%), url(pictures/IMG-20241031-WA0012.jpg);
     background-repeat: no-repeat;
@@ -50,7 +213,7 @@ body {
  .card-cont{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 10%;
     padding: 40px 20px;
     
  }
@@ -131,3 +294,38 @@ body {
   line-height: 50PX;
   text-align: justify;
  }
+
+ footer{
+  background-color: #333333;
+  color: #fff;
+}
+footer ul div li{
+  line-height: 40px;
+  font-weight: 500;
+}
+
+footer li a{
+  color: #f1f1f1;
+font-weight: 500;
+}
+footer button{
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+footer label {
+  font-size: 28px;
+  font-weight: 600;
+}
+footer .social-side a svg{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  transition: all 3s ;
+  color: #f1f1f1;
+}
+footer .social-side a:hover svg{
+  transform: translateY(-10px);
+  opacity: 0.78;
+}
