@@ -195,19 +195,16 @@ nav{
     background-image:linear-gradient(400deg,black,transparent 150%), url(pictures/IMG-20241031-WA0012.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    height: 400px;
+    min-height: 350px;
    
-    
   }
-  /* .text1{
+   .text1{
+    margin-top: 20px;
     color: white;
-    width: 50%;
-    font-style: italic;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 60%;
     text-align: justify;
-    line-height: 40px;
     padding: 50px;
-     */
+     
    
   }
  /* .card-cont{
