@@ -199,7 +199,7 @@ nav{
    
     
   }
-  .text1{
+  /* .text1{
     color: white;
     width: 50%;
     font-style: italic;
@@ -207,10 +207,10 @@ nav{
     text-align: justify;
     line-height: 40px;
     padding: 50px;
-    
+     */
    
   }
- .card-cont{
+ /* .card-cont{
     display: flex;
     justify-content: center;
     gap: 10%;
@@ -219,16 +219,18 @@ nav{
  }
  .card{
   box-shadow: 5px 5px 5px grey;
- }
+ } */
 
   .card-img-top{
-    height: 40%;
+   max-height:  50vh;
+   object-fit: cover;
+   width: 100%;
   } 
-  .origin-title{
+  /* .origin-title{
     text-align: center;
     padding-top: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+  } */
 
 
 
@@ -328,4 +330,16 @@ footer .social-side a svg{
 footer .social-side a:hover svg{
   transform: translateY(-10px);
   opacity: 0.78;
+}
+
+.carousel-item{
+  max-height: 70vh;
+  border-radius: 10px;
+}
+
+.carousel-item img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
