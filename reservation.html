@@ -32,52 +32,28 @@
         <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
     </ul>
 </nav>
-   <main class="main mt-5 py-5">
+   <main class="main mt-5 py-5" id="main_reservation">
     <h2 class="main-title fw-bold ">Faites vos reservation et savourez votre moment chez Teranga Gastro</h2>
     <div class="container text-center">
-        <div class="row px-3 py-4">
-          <div class="col-sm" id="list-main">
-            <ul>
-              <li>Adresse du restaurant:</li>
-              <li>sacre Coeur 3</li>
-            </ul>
-          </div>
-          <div class="col-sm" id="list-main">
-            <ul>
-            <li>+221 77 999 88 00</li>
-            <li>/33 777 77 77</li>
-          </ul>
-          </div>
-          <div class="col-sm" id="list-main">
-            <ul>
-              <li>Email du restaurant:</li>
-              <li>terangagas@gmail.com</li>
-        </ul>
-          </div>
-        </div>
         <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.821813839183!2d-17.47011292554278!3d14.722663974077843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173782be5390b%3A0x75f204652ab8ecc6!2zU2FjcsOpIGPFk3VyIDM!5e0!3m2!1sfr!2ssn!4v1731795685990!5m2!1sfr!2ssn" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div> 
-            <div class="col-sm-6">
-              <form class="row px-3 py-4">
+          
+            <div class="col-lg-12">
+              <form method="post" action="mailto:fayebaba81@gmail.com" enctype="text/plain" class="row px-3 py-4" id="myForm">
                 <div class="col-md-6">
                   <label class="visually-hidden">Entrer votre nom</label>
-                  <input type="text" class="form-control" id="input-box" placeholder="Entrer votre nom" required required>
+                  <input type="text" class="form-control nom" id="input-box" placeholder="Entrer votre nom" required required>
                 </div>
                 <div class="col-md-6">
                   <label class="visually-hidden">Entrer votre prenom </label>
-                  <input type="text" class="form-control" id="input-box" placeholder="Entrer votre prenom" required>
+                  <input type="text" class="form-control prenom" id="input-box" placeholder="Entrer votre prenom" required>
                 </div>
                 <div class="col-md-6">
                     <label class="visually-hidden">Date de reservation</label>
-                    <input type="date" class="form-control" id="input-box" required>
+                    <input type="date" class="form-control date" id="input-box" required>
                   </div>
                   <div class="col-md-6">
                         <label class="visually-hidden">Preference</label>
-                        <select class="form-select" id="input-box" required>
+                        <select class="form-select preference" id="input-box" required>
                           <option value="1">En groupe</option>
                           <option value="1">En couple</option>
                           <option value="2">Famille</option>
@@ -87,22 +63,22 @@
                   </div>
                 <div class="col-md-12">
                   <label class="visually-hidden">Nombre de place</label>
-                  <input type="number" class="form-control" id="input-box" placeholder="Nombre de place" required>
+                  <input type="number" class="form-control place" id="input-box" placeholder="Nombre de place" required>
                 </div>
                 <div class="col-md-6">
                   <label class="visually-hidden">Entrer votre email</label>
-                  <input type="email" class="form-control" id="input-box" placeholder="Entrer votre email" required>
+                  <input type="email" class="form-control email" id="input-box" placeholder="Entrer votre email" required>
                 </div>
                 <div class="col-md-6">
                   <label class="visually-hidden">Telephone</label>
-                  <input type="tel" class="form-control" id="input-box" placeholder="Votre numero de telephone" required>
+                  <input type="tel" class="form-control telephone" id="input-box" placeholder="Votre numero de telephone" required>
                 </div>
                 <div class="mb-3">
                     <label class="visually-hidden">message</label>
-                    <textarea name="message" id="input-box" class="form-control py-4"  placeholder="Commentaires"></textarea>
+                    <textarea name="message" id="input-box" class="form-control message" rows="5"  placeholder="Commentaires"></textarea>
                   </div>
                 <div class="col-md-12">
-                  <button type="submit" class="btn btn-light btn-lg" id="input-box">Envoyer</button>
+                  <button type="submit" class="btn btn-light btn-lg buttonSubmit" id="input-box">Envoyer</button>
                 </div>
               </form>
             </div> 
@@ -223,4 +199,10 @@
         </div>
     </div>
 </footer>
+<!-- email js -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<!-- js -->
+ <script  type="text/javascript" src="script/app.js"></script>
 </body>
