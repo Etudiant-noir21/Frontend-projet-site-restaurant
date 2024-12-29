@@ -38,22 +38,22 @@
         <div class="row">
           
             <div class="col-lg-12">
-              <form method="post" action="mailto:fayebaba81@gmail.com" enctype="text/plain" class="row px-3 py-4" id="myForm">
+              <form method="post" action="https://formspree.io/f/xkggbeqb" enctype="text/plain" class="row px-3 py-4" id="myForm">
                 <div class="col-md-6">
                   <label class="visually-hidden">Entrer votre nom</label>
-                  <input type="text" class="form-control nom" id="input-box" placeholder="Entrer votre nom" required required>
+                  <input type="text" class="form-control nom" id="input-box" name="nom" placeholder="Entrer votre nom" required >
                 </div>
                 <div class="col-md-6">
                   <label class="visually-hidden">Entrer votre prenom </label>
-                  <input type="text" class="form-control prenom" id="input-box" placeholder="Entrer votre prenom" required>
+                  <input type="text" class="form-control prenom" id="input-box" name="Prenom" placeholder="Entrer votre prenom" required>
                 </div>
                 <div class="col-md-6">
                     <label class="visually-hidden">Date de reservation</label>
-                    <input type="date" class="form-control date" id="input-box" required>
+                    <input type="date" class="form-control date" id="input-box" name="date" required>
                   </div>
                   <div class="col-md-6">
                         <label class="visually-hidden">Preference</label>
-                        <select class="form-select preference" id="input-box" required>
+                        <select class="form-select preference" id="input-box" name="preference" required>
                           <option value="1">En groupe</option>
                           <option value="1">En couple</option>
                           <option value="2">Famille</option>
@@ -63,19 +63,19 @@
                   </div>
                 <div class="col-md-12">
                   <label class="visually-hidden">Nombre de place</label>
-                  <input type="number" class="form-control place" id="input-box" placeholder="Nombre de place" required>
+                  <input type="number" class="form-control place" id="input-box" name="Nombre de place" placeholder="Nombre de place" required>
                 </div>
                 <div class="col-md-6">
                   <label class="visually-hidden">Entrer votre email</label>
-                  <input type="email" class="form-control email" id="input-box" placeholder="Entrer votre email" required>
+                  <input type="email" class="form-control email" id="input-box" name="email" placeholder="Entrer votre email" required>
                 </div>
                 <div class="col-md-6">
                   <label class="visually-hidden">Telephone</label>
-                  <input type="tel" class="form-control telephone" id="input-box" placeholder="Votre numero de telephone" required>
+                  <input type="tel" class="form-control telephone" id="input-box" name="telephone" placeholder="Votre numero de telephone" required>
                 </div>
                 <div class="mb-3">
                     <label class="visually-hidden">message</label>
-                    <textarea name="message" id="input-box" class="form-control message" rows="5"  placeholder="Commentaires"></textarea>
+                    <textarea name="message" id="input-box" name="message" class="form-control message" rows="5"  placeholder="Commentaires"></textarea>
                   </div>
                 <div class="col-md-12">
                   <button type="submit" class="btn btn-light btn-lg buttonSubmit" id="input-box">Envoyer</button>
@@ -204,5 +204,5 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 <!-- js -->
- <script  type="text/javascript" src="script/app.js"></script>
+ <script src="script/app.js"></script>
 </body>

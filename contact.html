@@ -61,22 +61,22 @@
                 </div>
             </div> 
             <div class="col-sm-6">
-                <form class="row px-3 py-4">
+                <form action="https://formspree.io/f/xgvvyqky" method="post" class="row px-3 py-4" id="formContact">
                     <div class="col-md-6">
                       <label class="form-label">Nom</label>
-                      <input type="text" class="form-control" id="input-box" required>
+                      <input type="text" class="form-control" id="nom" name="nom" required>
                     </div>
                     <div class="col-md-6">
                       <label  class="form-label">Prenom </label>
-                      <input type="text" class="form-control" id="input-box" required>
+                      <input type="text" class="form-control" id="prenom" name="prenom" required>
                     </div>
                     <div class="col-md-12">
                       <label class="form-label">Email</label>
-                      <input type="email" class="form-control" id="input-box" required>
+                      <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Commentaires</label>
-                        <textarea name="message" class="form-control py-4" id="input-box"></textarea>
+                        <textarea name="message" class="form-control py-4" id="message" name="message"></textarea>
                       </div>
                     <div class="col-md-12">
                       <button type="submit" class="btn btn-light btn-lg" id="input-box">Envoyer</button>
@@ -200,4 +200,16 @@
         </div>
     </div>
 </footer>
+
+<script>
+    const form = document.getElementById('formContact');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (form.checkValidity()) {
+            form.submit();
+        }
+       form.reset();
+
+    })
+</script>
 </body>
